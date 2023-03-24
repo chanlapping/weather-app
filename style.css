@@ -1,0 +1,142 @@
+:root {
+    --orange: #e4a514;
+    --yellow: #FFF56D;
+    --green: #99FFCD;
+    --blue: #9FB4FF;
+    --darkblue: #3e68ff;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--blue);
+    padding: 1em;
+}
+
+body.cold {
+    background-color: var(--blue);
+}
+
+body.moderate {
+    background-color: var(--green);
+}
+
+body.warm {
+    background-color: var(--yellow);
+}
+
+body.hot {
+    background-color: var(--orange);
+}
+
+h1 {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 4em;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    background-color: var(--darkblue);
+    margin-right: 1em;
+    border: none;
+}
+
+form input {
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    width: 150px;
+    appearance: none;
+}
+
+#message {
+    height: 2rem;
+    color: red;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1em;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 1em 0;
+}
+
+.date {
+    opacity: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.date.show {
+    opacity: 1;
+}
+
+.display {
+    height: 350px;
+}
+
+fieldset {
+    width: 240px;
+    border: 1px solid black;
+}
+
+
+.card p {
+    margin: 0 20px;
+}
+
+.tempC,
+.tempF {
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tempC.show,
+.tempF.show {
+    display: block;
+    margin: -1em 0 1em 20px;
+}
+
+.time,
+.humidity,
+.rain {
+    font-size: 0.7em;
+}
+
+.buttons {
+    margin: 0.5em 0;
+}
+
+.buttons span {
+    margin-right: 0.5em;
+}
+
+.day {
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+}
+
+.day:hover {
+    background-color: var(--darkblue);
+    color: black;
+}
+
+.day.active {
+    color: black;
+    cursor: default;
+}
+
+.day.active:hover {
+    background-color: transparent;
+}

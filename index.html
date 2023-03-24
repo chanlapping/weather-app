@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather Forcast</title>
+</head>
+<body>
+    <h1>5 Day Weather Forecast</h1>
+    <form>
+        <label for="city">city name: </label>
+        <input type="text" id="city">
+        <button type="submit">submit</button>
+        <div id="message"></div>
+    </form>
+    
+     <div class="display">
+        <div class="display-header">
+            <h2 class="city"></h2>
+        </div>
+        <div class="cards">
+            
+        </div>
+     </div>
+     <div class="buttons">
+        <button id="prevBtn">prev</button>
+        <span>Day</span>
+        <span class="day">1</span>
+        <span class="day">2</span>
+        <span class="day">3</span>
+        <span class="day">4</span>
+        <span class="day">5</span>
+        <button id="nextBtn">next</button>
+     </div>
+     <fieldset class="buttons">
+        <legend>temperature</legend>
+        <input type="radio" name="temperature" id="celsius" checked> <label for="celsius">Celsius</label>
+        <input type="radio" name="temperature" id="fahrenheit"> <label for="fahrenheit">Fahrenheit</label>
+     </fieldset>
+</body>
+</html>
